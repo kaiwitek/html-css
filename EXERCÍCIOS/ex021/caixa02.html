@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        @font-face {
+            font-family: gas;
+            src: url(RoundStyle-Book.ttf);
+        }
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(190, 184, 168);
+            margin: 10px 0px;
+        }
+
+        header {
+            border: 10px outset rgb(199, 199, 199);
+            background-color: gray;
+            margin: 15px 20px;
+            box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5); 
+            border-radius: 5px;
+        }
+
+        header > h1 {
+            font-family: gas;
+            font-size: 45px;
+            color: silver;
+            text-shadow: 0px 0px 4px black;
+            text-align: center;
+        }
+
+        header > nav {
+            background-color: gray;
+            width: 700px;
+            text-align: center;
+            margin: auto;
+        }
+
+        h1:hover {
+            text-shadow: 0px 0px 4px red;
+        }
+
+        header > nav > a {
+            color: black;
+            font-size: 20px;
+            text-shadow: 0px 0px 4px white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        header > nav > a:hover {
+            text-shadow: 0px 0px 4px red;
+        }
+
+        main {
+            background-color: gray;
+            margin: 20px 30px;
+            border: 10px outset rgb(199, 199, 199);
+            padding: 10px;
+            box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 50px 50px 50px 0px; /* sentido horário*/
+        }
+
+        main > section#noticias > article > h2 {
+            color: rgba(0, 0, 0, 0.767);
+            font-size: 2em;
+            margin: 10px 20px;
+            padding: 0px;
+        }
+
+        main > section#noticias > article > p {
+            color: black;
+            font-size: 20px;
+            margin: 0px 15px;
+        }
+
+        main > section#noticias > article > aside > p {
+            font-size: 15px;
+            text-align: right;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gas⛧Platino</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Search</a>
+            <a href="#">Collections</a>
+            <a href="#">Dresser</a>
+            <a href="#">Settings</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Dicas para montar o site</h2>
+                <p>
+                    "header" para cabeçalho, dentro de "header" podemos colocar a tags "nav" para navegação (colocando os links dentro dela)
+                    <br>
+                "main" para o corpo do site, dentro de "main" podemos colocar a tag "section" e dividir as "section" por id's (id="XXX")
+                    <br>
+                    "footer" para o pé do site
+                </p>
+                <aside>
+                    <p>Artigo escrito por Kai Witek</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>By Lotta⛧Silver</p>
+    </footer>
+</body>
+</html>

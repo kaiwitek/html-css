@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            # = id
+            . = class
+            : = pseudo-class     
+            :: = pseudo-element
+            > = children   
+        */
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+        }
+
+        a {
+            color: darkred;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-shadow: 0px 0px 4px red;
+        }
+
+        a:active {
+            color: red;
+            text-shadow: 0px 0px 4px red;
+        }
+
+        #mejor::after {
+            content: '←';
+            color: gray;
+        }
+
+        a:before {
+            content: '→';
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.pinterest.com/pin/605030531217662387/" target="_blank" id="mejor">Nobu</a></li>
+        <li><a href="https://br.pinterest.com/pin/824721750496073052/" target="_blank">Nana</a></li>
+        <li><a href="https://www.pinterest.com/pin/591308626085090420/" target="_blank">Yasu</a></li>
+    </ul>
+</body>
+</html>

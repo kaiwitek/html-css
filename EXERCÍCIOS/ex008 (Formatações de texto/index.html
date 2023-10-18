@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Títulos</title>
+    <link rel="shortcut icon" href="vampiro.ico" type="image/x-icon">
+   <style>mark {background-color: rgb(179, 179, 179)};</style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <p><ins>(O ideal é sempre usar semânticas)</ins></p>
+    <hr>
+    <h2>Negrito/Destaque</h2>
+    <p>Nessa frase temos um termo em <b>negrito</b> usando a tag &lt;b&gt;(Não Semântica)</p>
+    <p>Nessa frase temos um termo em <strong>negrito</strong> usando a tag &lt;strong&gt;(Semântica)</p>
+    <h2>Itálico/Ênfase</h2>
+    <p>Nessa frase temos um termo em <i>itálico</i> usando a tag &lt;i&gt;(Não Semântica)</p>
+    <p>Nessa frase temos um termo em <em>itálico</em> usando a tag &lt;em&gt;(Semântica)</p>
+    <h2>Texto marcado</h2>
+    <p>Nessa frase temos um termo em <mark>texto marcado</mark> usando a tag &lt;mark&gt;(Semântica)</p>
+    <p>Nessa frase temos um termo em <mark style="background-color: rgb(218, 4, 4);">texto marcado</mark> porém com uma cor diferente, usando a tag &lt;mark style="background-color: rgb(xxx, xxx, xxx);"&gt; do CSS no texto(Não Semântica)</p>
+    <!--Se eu quiser mudar a cor padrão da tag <mark> no documento todo pra manter ela semântica, tenho que colocar um seletor na área de head: <style>mark {background-color: rgb(xxx, xxx, xxx)};</style>-->
+    <h2>Texto grande e pequeno</h2>
+    <p>Nessa frase temos um termo em <big>texto grande</big> e em <small>texto pequeno</small> usando a tag &lt;big&gt;(OBSOLETA) e a tag &lt;small&gt;</p>
+    <h2>Texto riscado</h2>
+    <p>Nessa frase temos um termo em <del>texto riscado</del> usando a tag &lt;del&gt;(Semântica)</p>
+    <h2>Texto "inserido"</h2>
+    <p>Nessa frase temos um termo em <ins>texto sublinhado</ins> usando a tag &lt;ins&gt;(Semântica)</p>
+    <p>Nessa frase temos um termo em <u>texto sublinhado</u> usando a tag &lt;u&gt;(Não Semântica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo X<sup><mark>2</mark></sup>+3 usar a tag &lt;sup&gt;</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo H<sub><mark>2</mark></sub>O usar a tag &lt;sub&gt;</p>
+</body>
+</html>

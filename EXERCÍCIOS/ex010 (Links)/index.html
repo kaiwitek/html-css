@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="vampiro.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Usando Links</h1>
+    <hr>
+    <h2>Links Externos</h2>
+    <p>Com a tag &lt;a&gt; você pode adicionar um link ao seu texto<br>Exemplo:</p>
+    <p>Aqui você pode conferir todos os volumes de <a href="https://ivrea.com.ar/nana/index.htm">Nana</a></p>
+    <p>Colocar a tag target="_blank" dentro da tag &lt;a&gt; faz com que o link seja aberto em outra aba<br>Exemplo:</p>
+    <p>Aqui você pode conferir todos os volumes de <a href="https://ivrea.com.ar/nana/index.htm" target="_blank">Nana</a></p>
+    <p>Também é indicado usar a tag "rel="xxx" dentro da tag &lt;a&gt;, para indicar quando o link é:
+        <ul>
+            <li>external (Externo)</li>
+            <li>author (Do mesmo autor do documento atual)</li>
+            <li>prev (A parte anterior do documento atual)</li>
+            <li>next (A parte seguinte do documento atual)</li>
+            <li>nofollow (Não dou aval ao conteúdo)</li>
+        </ul>
+    </p>
+    <hr>
+    <h2>Links Internos</h2>
+    <p>Você também pode adicionar um link interno ao seu texto, caso a página esteja na mesma pasta do index<br>Exemplo:</p>
+    <p>Essa é minha <a href="pag002.html" rel="next">segunda página</a></p>
+    <p>Você também pode adicionar um link interno de uma sub-pasta ao seu texto, caso a pasta esteja na pasta do index, usando subpasta/<br>Exemplo:</p>
+    <p>Essa é minha <a href="noticias/pag003.html">terceira página</a></p>
+    <hr>
+    <h2>Links de Download</h2>
+    <p>Para adicionar um link de download, o arquivo deve estar na mesma ou em uma sub-pasta do index, colocando as tags download="arquivo" e type="xxx" o link procede a fazer o download<br>Exemplo</p>
+    <ul>
+        <li><a href="livro/Nana 21.pdf" download="Nana 21.pdf" type="application/pdf" target="_blank">Baixar NANA 21 em PDF</a></li>
+        <li><a href="livro/Nana 21.zip" download="Nana 21.zip" type="application.zip">Baixar NANA 21 em ZIP</a></li>
+    </ul>
+</body>
+</html>

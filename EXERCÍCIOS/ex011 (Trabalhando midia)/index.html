@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="vampiro.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <hr>
+    <h2>Imagens Dinâmicas</h2>
+    <p>Dentro da tag &lt;picture&gt; colocamos a tag &lt;img&gt;, e pra variar os tamanhos baseado no tamanho da tela colocamos a tag &lt;source media="(max-width: Xpx)" srcset="XXX" type="image/XXX"&gt;, SEMPRE de menor pra maior
+    <br>Exemplo:</p>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Grande">
+    </picture>
+    <h2>Reproduzindo Áudio</h2>
+    <p>Colocando a tag &lt;source src&gt; dentro da tag &lt;audio&gt; podemos reproduzir audios no nosso site, adicionando a tag control podemos adicionar um reprodutor
+    <br>Exemplo:</p>
+    <p>Escute Destroy Lonely - your eyes</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/dlye.mp3" type="audio/mpeg">
+        <source src="midia/dlye.ogg" type="audio/ogg">
+        <source src="midia/dlye.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não reproduz áudio, clique aqui para baixar a música <a href="midia/dlye.mp3">Destroy Lonely - your eyes</a></p>
+    </audio>
+</body>
+</html>

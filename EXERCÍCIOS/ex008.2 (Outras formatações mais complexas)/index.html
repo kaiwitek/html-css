@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações mais complexas</title>
+    <link rel="shortcut icon" href="vampiro.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <hr>
+    <h2>Código-fonte</h2>
+            <p>A tag &lt;code&gt; serve para deixar um texto em uma fonte monoespaçada lateralmente</p>
+    <h4>Exemplo:</h4>
+        <p>O comando <code>document.getElementById("teste")</code> é escrito em liguagem JavaScript</p>
+    <hr>
+    <h4>Se usar apenas a tag &lt;code&gt; o texto fica todo reto, desorganizado</h4>
+        <code>
+        num = int(input('Digite o número'))
+    if num % 2 == 0:
+        print(f'0 número {num} é PAR')
+    else
+        print(f'0 número {num} é ÍMPAR')
+    print('fim do programa')
+        </code>
+    <hr>
+    <h4>Se usar a tag &lt;pre&gt; antes da tag &lt;code&gt; o texto fica organizado do jeito que foi escrito</h4>
+    <pre>
+        <code>
+        num = int(input('Digite o número'))
+    if num % 2 == 0:
+        print(f'0 número {num} é PAR')
+    else
+        print(f'0 número {num} é ÍMPAR')
+    print('fim do programa')
+        </code>
+    </pre>
+        <p><strong>Para mexer texto horizoantalmente dentro do &lt;pre&gt; selecionar o texto e apertar: <br>Tab para cado espaço que for mexer para a direita <br>Shift+Tab para cado espaço que for mexer para a esquerda</strong></p>
+    <hr>
+    <h2>Citações simples</h2>
+        <p>A tag &lt;q&gt; serve para marcar uma citação na mesma linha</p>
+    <h4>Exemplo:</h4>
+        <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <hr>
+    <h2>Citações completas</h2>
+        <p>A tag &lt;blockquote&gt; serve para marcar uma citação completa</p>
+    <h4>Exemplo:</h4>
+        <p>Segundo <ins>KNITEMAREX</ins> a respeito de Soul Eater:</p>
+        <blockquote>Soul Eater is an impressive anime. It's one of those where you will no doubt enjoy watching.</blockquote>
+    <hr>
+        <p>A tag &lt;blockquote cite="link do site de onde saiu a quote"&gt; faz com que a citação mostre a fonte de onde foi retirada</p>
+    <h4>Exemplo:</h4>
+        <p>Segundo <ins>KNITEMAREX</ins> a respeito de Soul Eater:</p>
+        <blockquote cite="https://myanimelist.net/anime/3588/Soul_Eater/reviews">Soul Eater is an impressive anime. It's one of those where you will no doubt enjoy watching.</blockquote>
+    <hr>
+    <h2>Abreviações</h2>
+        <p>A tag &lt;abbr title="xxx"&gt; serve para que o cursor mostre o significado da abreviação quando passa por cima</p>
+    <h4>Exemplo:</h4>
+        <p>Eu adoro <abbr title="Soul Eater">SE</abbr>, <abbr title="Initial D">ID</abbr> e <abbr title="Dragon Ball">DB</abbr>.</p>
+    <hr>
+    <h2>Texto invertido</h2>
+        <p>A tag &lt;bdo dir="rtl"&gt; serve para escrever textos invertidos</p>
+    <h4>Exemplo:</h4>
+        <p><bdo dir="rtl">Vou assistir Soul Eater</bdo>(Vou assistir Soul Eater)</p>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="shortcut icon" href="vampiro.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <hr>
+    <h2>Listas Ordenadas</h2>
+    <p>A tag &lt;ol&gt; cria uma lista ordenada, cada item deve ser colocado com a tag &lt;li&gt; dentro da tag &lt;ol&gt;<br>Exemplo:</p>
+    <ol>
+        <li>Blackstar</li>
+        <li>Crona</li>
+        <li>Genya</li>
+        <li>Trunks</li>
+    </ol>
+    <p>Com a tag "type" dentro da tag &lt;ol&gt;, podemos mudar o tipo de marcação da lista, tendo como opções: 1 (padrão), A, a, I e i<br>Exemplo:</p>
+    <ol type="I">
+        <li>Blackstar</li>
+        <li>Crona</li>
+        <li>Genya</li>
+        <li>Trunks</li>
+    </ol>
+    <p>Ou:</p>
+    <ol type="A">
+        <li>Blackstar</li>
+        <li>Crona</li>
+        <li>Genya</li>
+        <li>Trunks</li>
+    </ol>
+    <p>Com a tag "start" dentro da tag &lt;ol&gt;, podemos mudar o número onde a lista começa<br>Exemplo:</p>
+    <ol start="5">
+        <li>Blackstar</li>
+        <li>Crona</li>
+        <li>Genya</li>
+        <li>Trunks</li>
+    </ol>
+    <hr>
+    <h2>Listas Não Ordenadas</h2>
+    <p>A tag &lt;ul&gt; cria uma lista desordenada, cada item deve ser colocado com a tag &lt;li&gt; dentro da tag &lt;ul&gt;<br>Exemplo:</p>
+    <ul>
+        <li>Blackstar</li>
+        <li>Crona</li>
+        <li>Genya</li>
+        <li>Trunks</li>
+    </ul>
+    <p>Com a tag "type" dentro da tag &lt;ul&gt;, podemos mudar o tipo de marcação da lista, tendo como opções: disc (padrão), circle e square<br>Exemplo:</p>
+    <ul type="square">
+        <li>Blackstar</li>
+        <li>Crona</li>
+        <li>Genya</li>
+        <li>Trunks</li>
+    </ul>
+    <hr>
+    <h2>Misturando Listas ol</h2>
+    <ol type="I">
+        <li>Animes Favoritos</li>
+        <ol type="A">
+            <li>Soul Eater</li>
+            <li>Initial D</li>
+            <li>Evangelion</li>
+        </ol>
+        <li>Mangás Favoritos</li>
+        <ol type="A" start="4"> 
+            <li>Nana</li>
+            <li>Soul Eater</li>
+            <li>Gachiakuta</li>
+        </ol>
+    </ol>
+    <hr>
+    <h2>Misturando Listas ol e ul</h2>
+    <p>"Meus personagens favoritos"</p>
+    <ol>
+        <li>Soul Eater</li>
+        <ul>
+            <li>Crona</li>
+            <ul type="disc">
+                <li>Do mal</li>
+            </ul>
+            <li>Blackstar</li>
+            <ul type="disc">
+                <li>Do bem</li>
+            </ul>
+            <li>Aracnida</li>
+            <ul type="disc">
+                <li>Do mal</li>
+            </ul>
+        </ul>
+        <li>Nana</li>
+        <ul>
+            <li>Nobu</li>
+            <li>Yasu</li>
+            <li>Nana Osaki</li>
+        </ul>
+        <li>Dragon Ball</li>
+        <ul>
+            <li>Trunks</li>
+            <ul type="disc">
+                <li>Do bem</li>
+            </ul>
+            <li>Broly</li>
+            <ul type="disc">
+                <li>Do mal</li>
+            </ul>
+            <li>Vegeta</li>
+            <ul type="disc">
+                <li>Do bem</li>
+            </ul>
+        </ul>
+    </ol>
+    <hr>
+    <h2>Lista de Definições</h2>
+    <p>A tag &lt;dl&gt; cria uma lista de definição, cada item deve ser colocado com a tag &lt;dt&gt; para indicar o termo/item, e a tag &lt;dd&gt; para indicar a definição dentro da tag &lt;dl&gt;<br>Exemplo:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem para criação do conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para crição do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação da interatividade de um site</dd>
+    </dl>
+</body>
+</html>
