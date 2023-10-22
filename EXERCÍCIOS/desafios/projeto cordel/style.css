@@ -1,2 +1,62 @@
 @charset "UTF-08";
 
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    margin: 0px;
+    padding-top: 10px;
+    height: 280px;
+}
+header > h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: ;
+    font-size: 8em;
+
+}
+
+header > p {
+    color: white;
+
+}
+
+section.textopreto {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+p.t1 {
+    color: black;
+    font-size: 4em;
+}
+
+section.textobranco {
+    background-color: black;
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    height: 650px;
+    padding: 50px 35px;
+}
+
+section.textobranco2 {
+        background-color: black;
+        background-image: url(imagens/background002.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        height: 720px;
+        padding: 20px 35px;
+}
+
+p.t2 {
+    color: white;
+    font-size: 4em;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 688px;
+    padding: 5px;
+}
