@@ -1,62 +1,74 @@
 @charset "UTF-08";
 
-body {
+* {
     margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
 header {
     background-color: black;
-    margin: 0px;
-    padding-top: 10px;
-    height: 280px;
-}
-header > h1 {
     color: white;
     text-align: center;
-    margin-bottom: ;
-    font-size: 8em;
+}
 
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 5em;
 }
 
 header > p {
-    color: white;
-
+    padding-bottom: 50px;
 }
 
-section.textopreto {
-    padding: 50px 20px;
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-shadow: 0px 0px 10px red;
+}
+
+section {
+    padding: 10vh 0px;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
     background-color: white;
+    color: black;
 }
 
 p.t1 {
-    color: black;
-    font-size: 4em;
+    font-size: 1em;
 }
 
-section.textobranco {
+section.imagem {
     background-color: black;
     background-image: url(imagens/background001.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: scroll;
-    height: 650px;
-    padding: 50px 35px;
 }
 
-section.textobranco2 {
-        background-color: black;
-        background-image: url(imagens/background002.jpg);
-        background-size: cover;
-        background-position: center center;
-        background-attachment: scroll;
-        height: 720px;
-        padding: 20px 35px;
-}
-
-p.t2 {
+section.imagem > p {
     color: white;
-    font-size: 4em;
+    font-size: 1em;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 688px;
-    padding: 5px;
+    width: 400px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
