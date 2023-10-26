@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: lightgray;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        tr.casa {
+            width: 100;
+            border: 1px solid rgba(0, 0, 0, 0.171);
+            text-align: center;
+            color: transparent;
+        }
+
+        tr.casa > td{
+            border: 1px solid rgba(0, 0, 0, 0.089);
+        }
+
+        .telhado {
+            background-color: rgb(170, 89, 23);
+        }
+        .porta {
+            background-color: rgb(126, 89, 64);
+        }
+
+        .janela {
+            background-color: lightblue;
+        }
+
+        .parede {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+
+    <h2>Casinha</h2>
+    <table>
+        <tr class="casa">
+            <td class="telhado" colspan="5">/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\</td>
+        </tr>
+        <tr class="casa">
+            <td  class="parede" colspan="5">Tijolo</td>
+        </tr>
+        <tr class="casa">
+            <td  class="parede">Tijolo</td>
+            <td  class="janela">Janela</td>
+            <td  class="parede">Tijolo</td>
+            <td  class="porta" rowspan="2">Porta</td>
+            <td  class="parede">Tijolo</td>
+        </tr>
+        <tr class="casa">
+            <td  class="parede" colspan="3">Tijolo</td>
+            <td  class="parede">Tijolo</td>
+        </tr>
+    </table>
+
+    <h2>Casinha (Estrutura)</h2>
+    <table>
+        <tr>
+            <td colspan="5">[Telhado]</td>
+        </tr>
+        <tr>
+            <td colspan="5">[Parede]</td>
+        </tr>
+        <tr>
+            <td>[Parede]</td>
+            <td>[Janela]</td>
+            <td>[Parede]</td>
+            <td rowspan="2">[Porta]</td>
+            <td>[Parede]</td>
+        </tr>
+        <tr>
+            <td colspan="3">[Parede]</td>
+            <td>[Parede]</td>
+        </tr>
+    </table>
+</body>
+</html>
