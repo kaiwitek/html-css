@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casinha</title>
+     <style>
+           table {
+                border-collapse: collapse;
+                width: 400px;
+            }
+
+            td {
+                padding: 8px;
+                text-align: center;
+            }
+
+            tr {
+                width: 100px;
+                text-align: center;
+                color: transparent;
+            }
+
+            .telhado {
+                background-color:rgb(185, 68, 18);
+                border: 5px dotted rgb(174, 63, 16);
+            }
+            .tijolo {
+                background-color:rgb(53, 53, 53);
+                border: 5px outset rgb(104, 104, 104);
+            }
+
+            .porta {
+                background-color:rgb(74, 53, 33);
+                border: 5px inset rgb(59, 48, 37);
+            }
+
+            .porta:hover{
+                background-color:rgb(174, 174, 174);
+                border-right: 10px solid rgb(74, 53, 33);
+            }
+
+            div {
+                margin-top: 10px;
+                width: 300px;
+                height: 300px;
+                border: 5px inset black;
+                border-radius: 5px;
+                background-color: slategrey;
+            }
+
+     </style>
+</head>
+<body>
+    <table>
+        <tr class="casa">
+            <td class="telhado" colspan="4">telhado</td>
+        </tr>
+        <tr class="casa">
+            <td class="tijolo">tijolo</td>
+            <td class="tijolo">tijolo</td>
+            <td class="tijolo">tijolo</td>
+            <td class="tijolo">tijolo</td>
+        </tr>
+        <tr class="casa">
+            <td class="tijolo">tijolo</td>
+            <td class="tijolo">tijolo</td>
+            <td class="porta" rowspan="2">porta</td>
+            <td class="tijolo">tijolo</td>
+        </tr>
+        <tr class="casa">
+            <td class="tijolo">tijolo</td>
+            <td class="tijolo">tijolo</td>
+            <td class="tijolo">tijolo</td>
+        </tr>
+    </table>
+    <div>
+        
+    </div>
+</body>
+</html>
